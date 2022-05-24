@@ -8,3 +8,6 @@
 
 # Le(s) Controller(s) sont au cœur de la logique métier de votre application. Ils se situent entre les vues et le model. Les requêtes qu'un client va faire depuis l'interface graphique, la view, vont être dirigées vers un controller qui sera en charge de manipuler les données dont il a besoin avec la brique Model, la traiter suivant le besoin métier, puis ordonner à la view de répondre au client avec les bons éléments.
 
+
+![Shema MVC](https://user-images.githubusercontent.com/74776897/170074113-05b96690-53b5-4afc-9252-6196455a62a7.jpg)
+
