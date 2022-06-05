@@ -1,13 +1,71 @@
-# billed-app
+#                                                                                
+              '||''|.    ||  '||  '||               '||                                            
+   }{ {}       ||   ||  ...   ||   ||    ....     .. ||      ....   ... ...  ... ...       }{ {}   
+ <>++=++<>     ||'''|.   ||   ||   ||  .|...||  .'  '||     '' .||   ||'  ||  ||'  ||    <>++=++<> 
+   }{ }{       ||    ||  ||   ||   ||  ||       |.   ||     .|' ||   ||    |  ||    |      }{ }{   
+ <>++=++<>    .||...|'  .||. .||. .||.  '|...'  '|..'||.    '|..'|'  ||...'   ||...'     <>++=++<> 
+   }{ }{                                                             ||       ||           }{ }{   
+                                                                    ''''     ''''                                                                                 
 
-# Structure MVC :
+'||''|.                   '||      ' '||''''|                '||  
+ ||   ||   ....     ....   ||  ..     ||  .    .. ...      .. ||  
+ ||'''|.  '' .||  .|   ''  || .'      ||''|     ||  ||   .'  '||  
+ ||    || .|' ||  ||       ||'|.      ||        ||  ||   |.   ||  
+.||...|'  '|..'|'  '|...' .||. ||.   .||.....| .||. ||.  '|..'||.
 
-# Le Model qui représente la structure des données. Leur définition ainsi que les fonctions qui leur sont propres et qu'elles peuvent avoir. Ce module est complètement décoléré du code métier ou de l'affichage de telle sorte à ce que la modification de la logique ou de l'interface n'affecte pas la structure des données.
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+cd Billed-app-FR-Back
+npm run run:dev
 
-# La View (ou les vues) représente l'interface graphique à livrer au client qui en fait la requête. Avoir le code lié à l'interface isolé de la logique métier ou des données permet de faire des modifications à l'interface graphique sans avoir à se soucier de casser du code métier ou la structure des données.
+Accéder à l'API :
+L'api est accessible sur le port 5678 en local, c'est à dire http://localhost:5678
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
-# Le(s) Controller(s) sont au cœur de la logique métier de votre application. Ils se situent entre les vues et le model. Les requêtes qu'un client va faire depuis l'interface graphique, la view, vont être dirigées vers un controller qui sera en charge de manipuler les données dont il a besoin avec la brique Model, la traiter suivant le besoin métier, puis ordonner à la view de répondre au client avec les bons éléments.
+
+'||''''|                            .   ' '||''''|                '||  
+ ||  .   ... ..    ...   .. ...   .||.     ||  .    .. ...      .. ||  
+ ||''|    ||' '' .|  '|.  ||  ||   ||      ||''|     ||  ||   .'  '||  
+ ||       ||     ||   ||  ||  ||   ||      ||        ||  ||   |.   ||  
+.||.     .||.     '|..|' .||. ||.  '|.'   .||.....| .||. ||.  '|..'||.
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Install :
+cd Billed-app-FR-Front
+npm install
+npm install -g live-server
+
+Restriction windows (à enlever dans le powershell windows mode admin)
+Set-ExecutionPolicy RemoteSigned
+
+cd Billed-app-FR-Front
+live-server
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Lancer les tests 
+cd Billed-app-FR-Front
+npm run test
+
+Lancer un seul test
+npm i -g jest-cli
+jest src/__tests__/your_test_file.js
+
+Comment voir la couverture de test ?
+http://127.0.0.1:8080/coverage/lcov-report/
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Login :
+
+administrateur :
+utilisateur : admin@test.tld 
+mot de passe : admin
+
+employé :
+utilisateur : employee@test.tld
+mot de passe : employee
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 
-![Shema MVC](https://user-images.githubusercontent.com/74776897/170074113-05b96690-53b5-4afc-9252-6196455a62a7.jpg)
 
