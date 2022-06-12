@@ -12,6 +12,8 @@ Back-End
 
 cd Billed-app-FR-Back
 
+npm install
+
 npm run run:dev
 
 Accéder à l'API :
